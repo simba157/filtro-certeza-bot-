@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: filtro-certeza-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8670729291:AAGR1uxROo2uIUTpHrTFjD_KKEIT3HOAhfU
+      - key: PORT
+        value: 10000
